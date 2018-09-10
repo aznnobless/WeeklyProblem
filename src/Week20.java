@@ -35,6 +35,14 @@ public class Week20
             int[] sample1 = new int[]{1,2,4,0,3};
             int[] sample2 = new int[]{1,4,5,0,3,2};
             int[] sample3 = new int[]{1,2,2,0};
+            int[] sample4 = new int[]{1,2,3,4,0};
+
+            Week20 p = new Week20();
+            System.out.println(p.solve(sample1));
+            System.out.println(p.solve(sample2));
+            System.out.println(p.solve(sample3));
+            System.out.println(p.solve(sample4));
+
         }
 
 }
