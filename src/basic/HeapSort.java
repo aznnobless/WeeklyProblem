@@ -29,9 +29,13 @@ public class HeapSort {
         }
     }
 
-    public void heapSort(int[] arr)
+
+    private void heapSort(int[] arr)
     {
         if (arr == null || arr.length == 0)
+
+        heapfify(arr);
+
         for (int i = arr.length -1; i >= 0; i--)
         {
             swap(arr, 0, i);
@@ -67,7 +71,6 @@ public class HeapSort {
     {
         HeapSort p = new HeapSort();
         int[] arr = {7,6,5,8,3,5,9,1,6};
-        p.heapfify(arr);
         p.heapSort(arr);
         print(arr);
     }
